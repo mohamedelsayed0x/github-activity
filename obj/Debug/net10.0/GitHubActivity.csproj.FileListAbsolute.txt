@@ -12,3 +12,4 @@ D:\Programming\DotNet\GitHubActivity\obj\Debug\net10.0\refint\GitHubActivity.dll
 D:\Programming\DotNet\GitHubActivity\obj\Debug\net10.0\GitHubActivity.pdb
 D:\Programming\DotNet\GitHubActivity\obj\Debug\net10.0\GitHubActivity.genruntimeconfig.cache
 D:\Programming\DotNet\GitHubActivity\obj\Debug\net10.0\ref\GitHubActivity.dll
+D:\Programming\DotNet\GitHubActivity\obj\Debug\net10.0\GitHubActivity.sourcelink.json
