@@ -93,4 +93,13 @@ public sealed class GitHubService : IDisposable
     _httpClient.Dispose();
   }
 }
+public sealed class GitHubServiceException : Exception
+{
+  public GitHubServiceException(string message) : base(message)
+  {
+  }
+
+  public GitHubServiceException(string message, Exception innerException) : base(message, innerException)
+  {
+  }
 }
