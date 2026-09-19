@@ -25,5 +25,18 @@ public static class EventFormatter
       _ => $"Activity: {gitHubEvent.Type} on {repoName}"
     };
   }
+  private static string FormatPushEvent(JsonElement payload, string repoName)
+  {
+    int commitCount = 0;
 
+    if (payload.ValueKind == JsonValueKind.Object &&
+        payload.TryGetProperty("commits", out JsonElement commits) &&
+        commits.ValueKind == JsonValueKind.Array)
+    {
+      commitCount = commits.GetArrayLength();
+    }
+
+    string commitWord = commitCount == 1 ? "commit" : "commits";
+    return $"Pushed {commitCount} {commitWord} to {repoName}";
+  }
 }
